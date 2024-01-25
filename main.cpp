@@ -17,8 +17,6 @@ int main()
     cook2.makeSoup();
 
 
-    //ItalianChef cook2("Anthony Bourdain");
-    //cook2.makePasta();
 
 
     return 0;
