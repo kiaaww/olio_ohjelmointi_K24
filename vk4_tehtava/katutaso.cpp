@@ -11,6 +11,7 @@ Katutaso::Katutaso()
 
 void Katutaso::maaritaAsunnot()
 {
+    cout<<"Maaritellaan koko kerrostalon kaikki asunnot"<<endl;
     cout<<"Maaritetaan 2 kpl katutason asuntoja"<<endl;
     as1.maarita(2,100);
     as2.maarita(2,100);

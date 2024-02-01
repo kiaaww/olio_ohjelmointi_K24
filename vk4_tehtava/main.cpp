@@ -2,21 +2,17 @@
 #include "asunto.h"
 #include "kerros.h"
 #include "katutaso.h"
+#include "kerrostalo.h"
 
 using namespace std;
 
 int main()
 {
 
-    Katutaso tulos;
-    tulos.maaritaAsunnot();
-    Kerros tulo;
-    tulo.maaritaAsunnot();
+    Kerrostalo tiedot;
 
-    double katutasonk=tulos.laskeKulutus(1);
-    double kerrosk=tulo.laskeKulutus(1);
-    double kokonaisuus=katutasonk+kerrosk;
 
+    int kokonaisuus=tiedot.laskeKulutus(1);
     cout<<"asuntojen kulutus, kun hinta=1, on "<<kokonaisuus<<endl;
 
 
