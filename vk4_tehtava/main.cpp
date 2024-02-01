@@ -8,11 +8,17 @@ using namespace std;
 int main()
 {
 
-    Katutaso asunnot;
-    asunnot.maaritaAsunnot();
-    Asunto tiedot;
-    tiedot.maarita(2, 100);
-    tiedot.maarita() = asunnot.maaritaAsunnot();
+    Katutaso tulos;
+    tulos.maaritaAsunnot();
+    Kerros tulo;
+    tulo.maaritaAsunnot();
+
+    double katutasonk=tulos.laskeKulutus(1);
+    double kerrosk=tulo.laskeKulutus(1);
+    double kokonaisuus=katutasonk+kerrosk;
+
+    cout<<"asuntojen kulutus, kun hinta=1, on "<<kokonaisuus<<endl;
+
 
     return 0;
 }

@@ -7,10 +7,11 @@ using namespace std;
 
 class Katutaso : public Kerros{
 public:
+
     Asunto as1;
     Asunto as2;
     Katutaso();
-    virtual void maaritaAsunnot() override;
+    void maaritaAsunnot() override;
     double laskeKulutus(double);
 
 };

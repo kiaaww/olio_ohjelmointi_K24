@@ -1,4 +1,5 @@
 #include "asunto.h"
+#include "katutaso.h"
 #include <iostream>
 using namespace std;
 
@@ -12,10 +13,9 @@ void Asunto::maarita(int a, int b)
     neliot=b;
     cout<<"Asunto maaritetty, asukkaita= "<<a<<" nelioita= "<<b<<endl;
 }
-double Asunto::laskeKulutus(double kulutus)
+double Asunto::laskeKulutus(double hinta)
 {
-    int h=1;
-    kulutus=h*asukasMaara*neliot;
-    cout<<"asunnon kulutus, kun hinta= "<<h<<", on "<<kulutus<<endl;
+    int kulutus=hinta*asukasMaara*neliot;
+
     return kulutus;
 }
