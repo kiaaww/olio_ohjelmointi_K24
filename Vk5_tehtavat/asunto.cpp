@@ -1,5 +1,4 @@
 #include "asunto.h"
-#include "katutaso.h"
 #include <iostream>
 using namespace std;
 
@@ -16,7 +15,7 @@ void Asunto::maarita(int a, int b)
 double Asunto::laskeKulutus(double hinta)
 {
     int kulutus=hinta*asukasMaara*neliot;
-    //cout<<"Kun hinta on= "<<hinta<<", kulutus on "<<kulutus<<endl;
+    cout<<"Kokonaiskulutus kun hinta = "<<hinta<<", kulutus = "<<kulutus<<endl;
 
     return kulutus;
 }

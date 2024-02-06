@@ -9,11 +9,22 @@ using namespace std;
 int main()
 {
 
-    Kerrostalo tiedot;
+    /*Asunto tiedot;
+    tiedot.maarita(2,100);
+    tiedot.laskeKulutus(1);*/
 
+    Katutaso tulos;
+    tulos.maaritaAsunnot();
+    Kerros tulos2;
+    tulos2.maaritaAsunnot();
+
+    int kokonaisuus = tulos.laskeKulutus(1) + tulos2.laskeKulutus(1);
+    cout<<"Kerrosten asuntojen kulutus, kun hinta on=1, on "<<kokonaisuus<<endl;
+
+    /*Kerrostalo tiedot;
 
     int kokonaisuus=tiedot.laskeKulutus(1);
-    cout<<"asuntojen kulutus, kun hinta=1, on "<<kokonaisuus<<endl;
+    cout<<"asuntojen kulutus, kun hinta=1, on "<<kokonaisuus<<endl;*/
 
 
     return 0;
