@@ -1,15 +1,19 @@
 #include <iostream>
-
+#include "kerros.h"
+#include "katukerros.h"
 #include "asunto.h"
+#include "kerrostalo.h"
 
 using namespace std;
 
 int main()
 {
 
-    Asunto *kulut = new Asunto;
-    kulut->maarita(2,100);
-    kulut->laskeKulutus(1);
+
+    Kerrostalo *tiedot = new Kerrostalo;
+
+    int kokonaisuus=tiedot->laskeKulutus(1);
+    cout<<"asuntojen kulutus, kun hinta=1, on "<<kokonaisuus<<endl;
 
     return 0;
 }

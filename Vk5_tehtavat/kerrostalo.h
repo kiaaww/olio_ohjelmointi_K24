@@ -1,20 +1,21 @@
 #ifndef KERROSTALO_H
 #define KERROSTALO_H
-#include "katutaso.h"
 #include "kerros.h"
+#include "katukerros.h"
 #include <iostream>
 using namespace std;
 
 class Kerrostalo
 {
-
-private:
-    Katutaso eka;
-    Kerros toka;
-    Kerros kolmas;
 public:
     Kerrostalo();
+    ~Kerrostalo();
     double laskeKulutus(double);
+
+private:
+    Katukerros* eka = new Katukerros();
+    Kerros* toka = new Kerros();
+    Kerros* kolmas = new Kerros();
 };
 
 #endif // KERROSTALO_H

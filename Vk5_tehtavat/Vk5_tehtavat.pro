@@ -5,7 +5,13 @@ CONFIG -= qt
 
 SOURCES += \
         asunto.cpp \
+        katukerros.cpp \
+        kerros.cpp \
+        kerrostalo.cpp \
         main.cpp
 
 HEADERS += \
-    asunto.h
+    asunto.h \
+    katukerros.h \
+    kerros.h \
+    kerrostalo.h
