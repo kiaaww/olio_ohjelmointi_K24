@@ -86,7 +86,7 @@ void MainWindow::timeout()
         }
     }
     //mikäli pelaaja ei ole 1
-    else{
+    else if(currentPlayer==2){
         if(player2Time > 0){
         player2Time--;
         }
